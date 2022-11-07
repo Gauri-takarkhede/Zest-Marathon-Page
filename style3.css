@@ -79,3 +79,89 @@ img {
     transform: translateX(-33.333333333333336%);
   }
 }
+
+@media (max-width: 1285px) {
+  .portrait-row > .portrait {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 1250px) {
+  .portrait-row > .portrait {
+    width: 22vw;
+  }
+}
+
+@media (max-width: 1150px) {
+  .portrait-row > .portrait {
+    width: 24vw;
+  }
+}
+
+@media (max-width: 1050px) {
+  .portrait-row > .portrait {
+    width: 26vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .portrait-row > .portrait {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .portrait-row > .portrait {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .portrait-row > .portrait {
+    width: 32vw;
+  }
+}
+@media (max-width: 750px) {
+  .portrait-row > .portrait {
+    width: 33vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .portrait-row > .portrait {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .portrait-row > .portrait {
+    width: 38vw;
+  }
+}
+@media (max-width: 630px) {
+  .portrait-row > .portrait {
+    width: 39vw;
+  }
+}
+@media (max-width: 600px) {
+  .portrait-row > .portrait {
+    width: 43vw;
+  }
+}
+@media (max-width: 570px) {
+  .portrait-row > .portrait {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 530px) {
+  .portrait-row > .portrait {
+    width: 47vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .portrait-row > .portrait {
+    width: 48vw;
+  }
+}

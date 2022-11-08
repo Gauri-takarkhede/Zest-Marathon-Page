@@ -102,10 +102,10 @@ body {
   left: 56%;
   transform: translate(-50%, -50%);
   font-style: italic;
-  color: rgba(0, 0, 0, 0);
+  color: orange;
   font-size: 95px;
   z-index: -1;
-  -webkit-text-stroke: 2px orange;
+  /*-webkit-text-stroke: 2px orange;*/
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   opacity: 0;
@@ -128,13 +128,13 @@ body {
   position: absolute;
   font-weight: 900;
   font-size: 19px;
-  color: grey;
+  color: rgb(0, 0, 0);
   line-height: 20px;
   top: 64%;
   left: 58%;
   width: 40%;
 }
-button {
+.btn1 {
   margin-top: 5px;
   background: orange;
   text-transform: uppercase;
@@ -143,6 +143,7 @@ button {
   padding: 8px 14px;
   letter-spacing: 2px;
   font-size: 1.3rem;
+  border-radius: 25px;
 }
 .media {
   position: absolute;
@@ -209,7 +210,7 @@ button {
     font-size: 80px;
   }
   .imglogo {
-    height: 80px;
+    height: 79px;
   }
   .content {
     line-height: 16px;
@@ -228,7 +229,7 @@ button {
   .content {
     top: 60%;
   }
-  button {
+  .btn1 {
     padding: 7px 15px;
   }
   .pattern {
@@ -270,5 +271,112 @@ button {
 @media (max-width: 950px) {
   .pattern {
     width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .imglogo {
+    height: 75px;
+  }
+  .title-2 {
+    left: 34%;
+    top: 23%;
+  }
+  .runner img {
+    margin-top: 13rem;
+  }
+  .box-3 {
+    left: 83%;
+    top: 26%;
+  }
+  .logo {
+    left: 37%;
+  }
+  .content {
+    top: 67%;
+  }
+  .pattern {
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 870px) {
+  .content {
+    left: 52%;
+    width: 47%;
+    top: 64%;
+  }
+  .box-3 {
+    height: 85px;
+    width: 85px;
+    left: 85%;
+    top: 28%;
+  }
+}
+@media (max-width: 830px) {
+  .box-3 {
+    height: 80px;
+    width: 80px;
+  }
+  .logo {
+    top: 15%;
+    left: 35%;
+  }
+  .title-2 {
+    left: 31%;
+    top: 22%;
+  }
+  .btn1 {
+    padding: 5px 8px;
+  }
+  .pattern {
+    width: 100%;
+  }
+  .runner img {
+    margin-top: 14rem;
+  }
+  .content {
+    left: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .btn1 {
+    padding: 5px 11px;
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    width: 49%;
+    left: 49%;
+  }
+  .runner img {
+    margin-top: 15rem;
+    width: 60%;
+  }
+  .content {
+    top: 62%;
+  }
+}
+
+@media (max-width: 680px) {
+  .runner img {
+    margin-top: 16rem;
+    width: 59%;
+  }
+  .imglogo {
+    height: 72px;
+  }
+  .logo {
+    left: 33%;
+  }
+  .title-2 {
+    left: 28%;
   }
 }

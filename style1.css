@@ -59,7 +59,7 @@ body {
   width: 60px;
   height: 60px;
   background: none;
-  border: 2px solid orange;
+  border: 2px solid purple;
   top: 4%;
   left: 15%;
   z-index: -1;
@@ -69,9 +69,9 @@ body {
   position: absolute;
   width: 120px;
   height: 120px;
-  background: orange;
-  top: 53%;
-  left: 17%;
+  background: purple;
+  top: 78%;
+  left: 40%;
   z-index: -1;
   transform: rotate(-110deg);
 }
@@ -80,7 +80,7 @@ body {
   width: 100px;
   height: 100px;
   background: none;
-  border: 2px solid orange;
+  border: 2px solid purple;
   top: 14%;
   left: 67%;
   z-index: -1;
@@ -89,7 +89,6 @@ body {
 .runner img {
   width: 50%;
   z-index: 2;
-  margin-top: 5rem;
 }
 
 .imglogo {
@@ -102,7 +101,7 @@ body {
   left: 56%;
   transform: translate(-50%, -50%);
   font-style: italic;
-  color: orange;
+  color: purple;
   font-size: 95px;
   z-index: -1;
   /*-webkit-text-stroke: 2px orange;*/
@@ -130,21 +129,96 @@ body {
   font-size: 19px;
   color: rgb(0, 0, 0);
   line-height: 20px;
-  top: 64%;
+  top: 50%;
   left: 58%;
   width: 40%;
 }
+
 .btn1 {
   margin-top: 5px;
-  background: orange;
+  background: purple;
   text-transform: uppercase;
   color: #fff;
   border: none;
-  padding: 8px 14px;
+  padding: 18px;
   letter-spacing: 2px;
   font-size: 1.3rem;
   border-radius: 25px;
 }
+/*
+.btn1 {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 151, 0, 1) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
+  line-height: 42px;
+  padding: 10px;
+  border: none;
+}
+.btn1 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn1:before,
+.btn1:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn1:before {
+  height: 0%;
+  width: 2px;
+}
+.btn1:after {
+  width: 0%;
+  height: 2px;
+}
+.btn1:hover {
+  color: rgba(251, 75, 2, 1);
+  background: transparent;
+}
+.btn1:hover:before {
+  height: 100%;
+}
+.btn1:hover:after {
+  width: 100%;
+}
+.btn1 span:before,
+.btn1 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn1 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn1 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn1 span:hover:before {
+  height: 100%;
+}
+.btn1 span:hover:after {
+  width: 100%;
+}*/
+
 .media {
   position: absolute;
   bottom: 210px;
@@ -162,7 +236,7 @@ body {
 @media (max-width: 1300px) {
   .runner img {
     width: 55%;
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
   .pattern {
     width: 70%;
@@ -179,11 +253,14 @@ body {
   .pattern {
     width: 79%;
   }
+  .runner img {
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 1150px) {
   .title-2 {
-    left: 58%;
+    left: 60%;
     font-size: 87px;
   }
   .runner img {
@@ -195,13 +272,16 @@ body {
   }
   .runner img {
     width: 58%;
-    margin-top: 8rem;
   }
   .imglogo {
     height: 90px;
   }
   .pattern {
     width: 82%;
+  }
+  .box-2 {
+    top: 75%;
+    left: 37%;
   }
 }
 
@@ -229,9 +309,7 @@ body {
   .content {
     top: 60%;
   }
-  .btn1 {
-    padding: 7px 15px;
-  }
+
   .pattern {
     width: 90%;
   }
@@ -240,6 +318,13 @@ body {
 @media (max-width: 1000px) {
   .pattern {
     width: 95%;
+  }
+  .content {
+    top: 50%;
+  }
+
+  .title-2 {
+    left: 58%;
   }
 }
 
@@ -255,16 +340,25 @@ body {
     margin-top: 9rem;
   }
   .title-2 {
-    font-size: 75px;
     top: 34%;
   }
   .imglogo {
     height: 80px;
   }
 
+  .title-2 {
+    left: 36%;
+    top: 22%;
+  }
   .box-3 {
     height: 90px;
     width: 90px;
+    left: 83%;
+    top: 28%;
+  }
+  .box-2 {
+    width: 96px;
+    height: 96px;
   }
 }
 
@@ -283,7 +377,7 @@ body {
     top: 23%;
   }
   .runner img {
-    margin-top: 13rem;
+    margin-top: 11rem;
   }
   .box-3 {
     left: 83%;
@@ -293,8 +387,9 @@ body {
     left: 37%;
   }
   .content {
-    top: 67%;
+    top: 57%;
   }
+
   .pattern {
     opacity: 0.4;
   }
@@ -304,13 +399,27 @@ body {
   .content {
     left: 52%;
     width: 47%;
-    top: 64%;
+    top: 60%;
   }
   .box-3 {
     height: 85px;
     width: 85px;
     left: 85%;
     top: 28%;
+  }
+  .box-2 {
+    left: 33%;
+    top: 80%;
+  }
+  .runner img {
+    width: 60%;
+  }
+  .box-2 {
+    width: 80px;
+    height: 80px;
+  }
+  .btn1 {
+    padding: 14px;
   }
 }
 @media (max-width: 830px) {
@@ -324,59 +433,142 @@ body {
   }
   .title-2 {
     left: 31%;
-    top: 22%;
+    top: 20%;
   }
-  .btn1 {
-    padding: 5px 8px;
+  .content p {
+    margin-bottom: 0;
   }
   .pattern {
     width: 100%;
   }
   .runner img {
-    margin-top: 14rem;
+    margin-top: 10rem;
   }
+
   .content {
-    left: 50%;
+    left: 55%;
+    top: 57%;
+    width: 42%;
+  }
+  .box-2 {
+    left: 30%;
+    top: 78%;
   }
 }
 @media (max-width: 800px) {
   .content {
     font-size: 1rem;
+    top: 57%;
+  }
+  .runner img {
+    width: 62%;
   }
 }
 
 @media (max-width: 780px) {
   .btn1 {
-    padding: 5px 11px;
+    padding: 13px;
+  }
+  .content {
+    top: 57%;
+    left: 53%;
+  }
+
+  .imglogo {
+    height: 70px;
+  }
+  .title-2 {
+    font-size: 77px;
   }
 }
 
 @media (max-width: 750px) {
   .content {
-    width: 49%;
-    left: 49%;
+    width: 47%;
+    left: 52%;
+    top: 54%;
   }
   .runner img {
-    margin-top: 15rem;
-    width: 60%;
+    margin-top: 9rem;
+    width: 62%;
   }
-  .content {
-    top: 62%;
+  .imglogo {
+    height: 73px;
+  }
+  .title-2 {
+    font-size: 77px;
+  }
+  .btn1 {
+    margin-top: 0;
+  }
+  .box-2 {
+    left: 23%;
+    top: 71%;
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 700px) {
   .runner img {
-    margin-top: 16rem;
-    width: 59%;
+    width: 66%;
+    margin-top: 10rem;
   }
-  .imglogo {
-    height: 72px;
+  .content {
+    width: 42%;
+    left: 56%;
+    top: 53%;
+  }
+}
+@media (max-width: 680px) {
+  .title-2 {
+    font-size: 73px;
+  }
+  .content {
+    width: 42%;
+    left: 58%;
+    top: 47%;
+  }
+
+  .runner img {
+    margin-top: 9rem;
+    width: 63%;
   }
   .logo {
     left: 33%;
   }
   .title-2 {
     left: 28%;
+    top: 20%;
+  }
+  .imglogo {
+    height: 70px;
+  }
+  .box-2 {
+    left: 34%;
+    top: 67%;
+  }
+}
+
+@media (max-width: 650px) {
+  .box-3 {
+    left: 80%;
+  }
+  .imglogo {
+    height: 65px;
+  }
+  .title-2 {
+    font-size: 71px;
+    top: 19%;
+  }
+  .content {
+    top: 45%;
+  }
+  .box-2 {
+    top: 61%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-2 {
+    font-size: 68px;
   }
 }

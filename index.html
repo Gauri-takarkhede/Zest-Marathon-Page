@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -15,12 +17,11 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style1.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="stylesheet" href="style3.css" />
-    <link rel="stylesheet" href="style4.css" />
-    <link rel="stylesheet" href="style5.css" />
-    <link rel="stylesheet" href="style6.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="prizes.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="footer.css" />
 
     <link
       rel="stylesheet"
@@ -38,8 +39,9 @@
     type="text/css"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
   <body>
-    <div class="wrapper">
+    <div style="z-index: -5" class="wrapper">
       <div class="pattern"></div>
       <div class="nav">
         <div class="logo">
@@ -55,11 +57,13 @@
       </div>
       <div class="title-1"></div>
       <div class="content">
-        <p>
+        <p>  
+          <h2 class="animate-charcter"> <b> A mile for a Smile! </b></h2> 
+           <br />
+          <br />
+        
           3 KM | 5 KM | 10 KM | 21 KM <br />
-          <br />
-          One more step to the horizon!! <br />
-          <br />
+          <br>
           Open for All <br />
           <br />
           Date of Registration - 7th Jan'22 till 11.59 P.M. <br />
@@ -72,8 +76,41 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-    <div class="prizeshead">Special Prizes</div>
-    <div id="container">
+
+    
+   
+    <div class="aboutevent">
+      
+      <div class="offset-wrap">
+        <div class="content-card">
+          <div class="dark">
+            <p>
+              <u> <b> About Event </b> </u> <br />
+              On field run is divided into four sub-categories: <br />
+              3 KM (Fun-Ride) | 5 KM | 10 KM | 21 KM <br />
+              <u><b> Special Category </b></u><br />
+              1600 m <br />
+              <u>
+                <b
+                  >For 5 KM and 10 KM Category there will be 3 age
+                  categories:</b
+                >
+              </u>
+              <br />
+              Below 16 years | Between 16 to 35 years | Above 35 years <br />
+              There will be special prizes for Participants above 60 years
+              <br />
+              <u> <b> For 21 KM, there will be no age-wise category</b></u>
+              <br />
+              Gender-wise categories will be there in all On Field Races. <br />
+              <u><b>Deliverables to Participants: </b></u> <br />
+              T-shirt
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div id="container">
       <div class="card">
         <div class="circle"></div>
         <div class="info">
@@ -96,34 +133,37 @@
         </div>
       </div>
     </div>
-    <div class="infohead">About Event</div>
+<div class="infocontainer">
+  <div class="info1"><p>
+   <b> Platform: </b>'STRAVA' app <br />
+    <b> Date of Event:</b> 7th January to 10th January 2022 <br />
+    <b>Last Date of registration:</b> 7th January 
+    <br>
+    <br>
+  </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Read More
+</button>
 
-    <div class="moreinfo">
-      <div class="eventinfo">
-        <p>
-          1. On field running: <br />
-          On field run is divided into four sub-categories: <br />
-          3 KM (Fun-Ride) | 5 KM | 10 KM | 21 KM <br />
-          Special Category <br />
-          1600 m <br />
-          For 5 KM and 10 KM Category there will be 3 age categories: <br />
-          Below 16 years | Between 16 to 35 years | Above 35 years <br />
-          There will be special prizes for Participants above 60 years <br />
-          For 21 KM, there will be no age-wise category <br />
-          Gender-wise categories will be there in all On Field Races. <br />
-          Deliverables to Participants: <br />
-          T-shirt
-        </p>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius rerum quaerat ipsa omnis adipisci culpa provident tempora cum repellat ducimus quas neque eaque necessitatibus numquam aperiam vero corporis, velit facilis!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="cont1">
-        <p>
-          Platform:'STRAVA' app <br />
-          Date of Event: 7th January to 10th January 2022 <br />
-          Last Date of registration: 7th January 2022
-        </p>
+      <div class="modal-body">
+        ...
       </div>
+      
     </div>
-    <div class="galleryhead">Gallery</div>
+  </div>
+</div></div>
+  <div class="rules"></div>
+</div>
+   
     <div class="_overflow-hidden">
       <div class="_rotated">
         <div class="portrait-row -on-scroll">
@@ -231,7 +271,7 @@
               <div class="single-cta">
                 <i class="fas fa-phone"></i>
                 <div class="cta-text">
-                  <h4>SANKET DESHMUKH</h4>
+                  <h4>SANKET WASULE</h4>
                   <span>1234567891</span>
                 </div>
               </div>
@@ -246,8 +286,10 @@
               <div class="single-cta">
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="cta-text">
-                  <h4>RAHUL</h4>
-                  <span>1234567891</span>
+                  <h4>ADDRESS</h4>
+                  <span
+                    >ZEST Office Shivajinagar, Pune, Maharashtra 411005</span
+                  >
                 </div>
               </div>
             </div>
@@ -256,8 +298,8 @@
               <div class="single-cta">
                 <i class="far fa-envelope-open"></i>
                 <div class="cta-text">
-                  <h4>MAHESH</h4>
-                  <span>1234567891</span>
+                  <h4>EMAIL</h4>
+                  <span>zs.zest@coep.ac.in</span>
                 </div>
               </div>
             </div>
@@ -275,10 +317,12 @@
         </div>
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="script.js"></script>
-    <script src="script3.js"></script>
+    <script src="hero.js"></script>
+    
     <script></script>
   </body>
 </html>

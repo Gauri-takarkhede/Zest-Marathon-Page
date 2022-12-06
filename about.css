@@ -1,0 +1,197 @@
+.aboutevent {
+  position: relative;
+}
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+.infocontainer {
+  display: grid;
+  background-color: purple;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 7rem;
+  text-align: center;
+  color: white;
+}
+.eventinfo {
+  color: black;
+}
+.info1,
+.rules {
+  padding: 5rem;
+}
+.info1 {
+  font-size: 1.5rem;
+}
+.rules {
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+  background-image: url(/images/raceimg.jpg);
+  background-size: cover;
+}
+
+#exampleModalLabel {
+  color: black;
+}
+.btn-primary {
+  background-color: blueviolet;
+}
+
+.btn-primary:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  background-color: aliceblue;
+  color: black;
+}
+.banner {
+  height: 25em;
+  overflow: hidden;
+
+  background-position: 50% 0%;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.banner:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -50%;
+  left: -25%;
+  height: 71%;
+  width: 200%;
+  background: purple;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
+  transform: rotateZ(-5deg) skew(-6deg);
+}
+@media (max-width: 500px) {
+  .banner:before {
+    transform: rotateZ(0deg) skew(0deg);
+  }
+}
+.banner .heading {
+  position: absolute;
+  top: 4vmax;
+  left: 2vmax;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 6em;
+  font-family: "Lobster", cursive;
+  transform: rotateZ(-5deg);
+  text-shadow: 2px 2px 0px rgba(74, 16, 74, 0.468),
+    4px 4px 0px rgba(81, 21, 81, 0.501), 6px 6px 0px rgba(75, 30, 75, 0.527),
+    8px 8px 0px rgba(128, 0, 128, 0.511), 10px 10px 0px rgba(128, 0, 128, 0.467);
+}
+@media (max-width: 600px) {
+  .banner .heading {
+    font-size: 15vmin;
+  }
+}
+
+.offset-wrap {
+  margin: -16em auto 0 auto;
+}
+.dark {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.content-card p {
+  padding: 2rem;
+  background-color: #80008075;
+}
+
+.content-card {
+  text-align: center;
+  background: url(/images/runimg.jpg);
+  background-size: cover;
+  width: 75vw;
+  margin: 4em auto;
+  padding: 2em;
+  margin-top: 20rem;
+  border-radius: 10px;
+  font-size: 1.3em;
+  color: white;
+  line-height: 1.6;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+/*
+<div class="cont1">
+            <p>
+              Platform:'STRAVA' app <br />
+              Date of Event: 7th January to 10th January 2022 <br />
+              Last Date of registration: 7th January 2022
+            </p>
+          </div>
+.cont1 {
+  position: absolute;
+  background-color: orange;
+  width: 30%;
+  top: 80%;
+
+  border-radius: 10px;
+}*/
+
+@media (max-width: 450px) {
+  .content-card {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1285px) {
+  .banner .heading {
+    top: 4vmax;
+  }
+  .content {
+    top: 52%;
+  }
+  .box-3 {
+    top: 9%;
+    left: 73%;
+  }
+  .logo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .banner .heading {
+    top: 3vmax;
+  }
+  .box-2 {
+    top: 33rem;
+  }
+
+  .logo {
+    top: 36%;
+  }
+}
+@media (max-width: 920px) {
+  .content {
+    top: 28%;
+  }
+
+  .box-2 {
+    top: 36rem;
+  }
+  .bannerprizes .headingprizes {
+    top: 3vmax;
+  }
+  #container {
+    margin-bottom: 2rem;
+    height: 45rem;
+  }
+  .banner .heading {
+    top: 1.7vmax;
+  }
+  #galleryhead {
+    top: 3.7vmax;
+  }
+  .title-2 {
+    left: 31%;
+    top: 11rem;
+  }
+  .box-3 {
+    left: 80%;
+  }
+}

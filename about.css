@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 .infocontainer {
+  position: relative;
   display: grid;
   background-color: purple;
   grid-template-columns: 1fr 1fr;
@@ -26,14 +27,22 @@
   background-image: url(/images/raceimg.jpg);
   background-size: cover;
 }
+.modal-body {
+  color: black;
+  font-size: 1rem;
+}
 
 #exampleModalLabel {
   color: black;
 }
 .btn-primary {
+  border-radius: 25px;
   background-color: blueviolet;
 }
 
+.btn-secondary {
+  border-radius: 25px;
+}
 .btn-primary:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -60,11 +69,7 @@
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
   transform: rotateZ(-5deg) skew(-6deg);
 }
-@media (max-width: 500px) {
-  .banner:before {
-    transform: rotateZ(0deg) skew(0deg);
-  }
-}
+
 .banner .heading {
   position: absolute;
   top: 4vmax;
@@ -78,11 +83,6 @@
   text-shadow: 2px 2px 0px rgba(74, 16, 74, 0.468),
     4px 4px 0px rgba(81, 21, 81, 0.501), 6px 6px 0px rgba(75, 30, 75, 0.527),
     8px 8px 0px rgba(128, 0, 128, 0.511), 10px 10px 0px rgba(128, 0, 128, 0.467);
-}
-@media (max-width: 600px) {
-  .banner .heading {
-    font-size: 15vmin;
-  }
 }
 
 .offset-wrap {
@@ -129,69 +129,3 @@
 
   border-radius: 10px;
 }*/
-
-@media (max-width: 450px) {
-  .content-card {
-    width: 100%;
-    border-radius: 0px;
-    box-shadow: none;
-  }
-}
-
-@media (max-width: 1285px) {
-  .banner .heading {
-    top: 4vmax;
-  }
-  .content {
-    top: 52%;
-  }
-  .box-3 {
-    top: 9%;
-    left: 73%;
-  }
-  .logo {
-    left: 36%;
-  }
-}
-
-@media (max-width: 1030px) {
-  .banner .heading {
-    top: 3vmax;
-  }
-  .box-2 {
-    top: 33rem;
-  }
-
-  .logo {
-    top: 36%;
-  }
-}
-@media (max-width: 920px) {
-  .content {
-    top: 28%;
-  }
-
-  .box-2 {
-    top: 36rem;
-  }
-  .bannerprizes .headingprizes {
-    top: 3vmax;
-  }
-  #container {
-    margin-bottom: 2rem;
-    height: 45rem;
-  }
-  .banner .heading {
-    top: 1.7vmax;
-  }
-  #galleryhead {
-    top: 3.7vmax;
-  }
-  .title-2 {
-    left: 31%;
-    top: 11rem;
-  }
-  .box-3 {
-    left: 80%;
-  }
-}

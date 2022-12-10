@@ -1,0 +1,133 @@
+.deliverables ul {
+  width: min(100rem, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding-bottom: 6rem;
+}
+
+.deliverables ul li {
+  max-width: 12rem;
+  justify-self: center;
+  display: grid;
+  grid-template:
+    "icon"
+    "line"
+    "dot"
+    "title"
+    "descr" 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.deliverables ul li .icon {
+  grid-area: icon;
+  width: 6rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  border: 0.4rem solid var(--bgColor);
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+    inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+}
+
+.deliverables ul li::before {
+  content: "";
+  grid-area: line;
+  height: 2rem;
+  border-right: 2px dotted currentColor;
+}
+
+.deliverables ul li::after {
+  content: "";
+  grid-area: dot;
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent-color);
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.deliverables ul li .title {
+  grid-area: title;
+  margin-block: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.deliverables .credits {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.deliverables .credits a {
+  color: var(--color);
+}
+
+.deliverables h1 {
+  text-align: center;
+  padding: 4rem;
+}
+.registerbtn {
+  color: white;
+  background-color: purple;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 2px solid;
+}
+
+.registerbtn :hover {
+  font-weight: bolder;
+}
+
+@media (max-width: 1285px) {
+  .deliverables ul {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+
+@media (max-width: 1030px) {
+  .deliverables ul {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  }
+}
+
+@media (max-width: 830px) {
+  .deliverables ul {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .blog-card p:first-of-type {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .deliverables ul {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  }
+  .deliverables ul li .title {
+    font-size: 1.1rem;
+  }
+}
+.certificate,
+.food,
+.medical,
+.medals,
+.tshirt,
+.giftbox,
+.energydrink,
+.bib {
+  width: 4.5rem;
+}

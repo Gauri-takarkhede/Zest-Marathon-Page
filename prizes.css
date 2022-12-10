@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 #container {
-  margin-bottom: 5rem;
+  margin: 5rem 0;
   width: 100%;
   min-height: 50vh;
   /* background: linear-gradient(33deg, #202020, #484842);*/
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+
   padding: 10px;
 }
 /*
@@ -183,11 +183,7 @@ h1 {
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
   transform: rotateZ(-5deg) skew(-6deg);
 }
-@media (max-width: 500px) {
-  .bannerprizes:before {
-    transform: rotateZ(0deg) skew(0deg);
-  }
-}
+
 .bannerprizes .headingprizes {
   position: absolute;
   top: 5vmax;
@@ -201,9 +197,4 @@ h1 {
   text-shadow: 2px 2px 0px rgba(74, 16, 74, 0.468),
     4px 4px 0px rgba(81, 21, 81, 0.501), 6px 6px 0px rgba(75, 30, 75, 0.527),
     8px 8px 0px rgba(128, 0, 128, 0.511), 10px 10px 0px rgba(128, 0, 128, 0.467);
-}
-@media (max-width: 600px) {
-  .bannerprizes .headingprizes {
-    font-size: 15vmin;
-  }
 }
